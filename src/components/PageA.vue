@@ -8,27 +8,26 @@
     </b-col>
   </b-row>
   <div class='row card-container container'>
-    <b-col  class='col-md-4'>
+    <b-col  class='cards' sm='12' md='4' lg='4'>
       <b-card title="Card Title 1"
                 img-src="https://picsum.photos/600/300/?image=25"
                 img-alt="Image"
                 img-top
                 tag="article"
-                style="max-width: 20rem;"
-                class="mb-2">
+                style=""
+                class="">
           <p class="card-text">
             Some quick example text to build on the card title and make up the bulk of the card s content.
           </p>
           <b-button href="#" variant="primary">Go somewhere</b-button>
         </b-card>
       </b-col>
-      <b-col  class=' col-md-4'>
+      <b-col class='cards' sm='12' md='4' lg='4'>
       <b-card title="Card Title 2"
               img-src="https://picsum.photos/600/300/?image=25"
               img-alt="Image"
               img-top
               tag="article"
-              style="max-width: 20rem;"
               class="mb-2">
         <p class="card-text">
           Some quick example text to build on the card title and make up the bulk of the card s content.
@@ -36,13 +35,13 @@
         <b-button href="#" variant="primary">Go somewhere</b-button>
       </b-card>
       </b-col>
-      <b-col  class='col-md-4'>
+      <b-col class='cards' sm='12' md='4' lg='4'>
       <b-card title="Card Title 3"
               img-src="https://picsum.photos/600/300/?image=25"
               img-alt="Image"
               img-top
               tag="article"
-              style="max-width: 20rem;"
+
               class="mb-2">
         <p class="card-text">
           Some quick example text to build on the card title and make up the bulk of the card s content.
@@ -84,6 +83,8 @@ div.Fpar{
 .text-wrapper p{
   margin-bottom: 50px;
 }
-
+.cards{
+  margin: 5px 0;
+}
 
 </style>
