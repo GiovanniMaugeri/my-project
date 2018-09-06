@@ -35,9 +35,6 @@ export default {
 </script>
 <style scoped>
 div{
-  padding: 30px;
-}
-.pageB{
-
+  margin-top: 30px;
 }
 </style>
