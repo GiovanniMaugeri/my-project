@@ -1,9 +1,9 @@
 <template>
 <div>
   <b-nav class='menu'>
-    <b-nav-item active class='nav-item'>Active</b-nav-item>
-    <b-nav-item>Link</b-nav-item>
-    <b-nav-item>Another Link</b-nav-item>
+    <b-nav-item active class='nav-item' v-on:click = "$emit('welcome')">Welcome</b-nav-item>
+    <b-nav-item v-on:click = "$emit('form')">Form</b-nav-item>
+    <b-nav-item v-on:click = "$emit('contact')">Contact us</b-nav-item>
   </b-nav>
 </div>
 
@@ -14,18 +14,10 @@ export default {
   name: 'attempt',
   data () {
     return {
-      dismissSecs: 10,
-      dismissCountDown: 0,
-      showDismissibleAlert: false
     }
   },
   methods: {
-    countDownChanged (dismissCountDown) {
-      this.dismissCountDown = dismissCountDown
-    },
-    showAlert () {
-      this.dismissCountDown = this.dismissSecs
-    }
+
   }
 
 }
