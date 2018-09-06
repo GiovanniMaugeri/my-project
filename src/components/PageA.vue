@@ -1,5 +1,52 @@
 <template>
+<div>
+  <div class='container'>
+    <div class='text-wrapper'>
+      <h2> Some title </h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in eros faucibus, tempor quam eget, convallis libero. Praesent sed faucibus ipsum. Cras pretium tellus nec lectus semper tincidunt. Pellentesque lobortis dolor nibh, vitae lobortis orci efficitur eget. Vestibulum fermentum viverra enim, non rhoncus augue mollis non. Maecenas placerat tincidunt imperdiet. Fusce viverra dapibus dui at pretium. Proin eget turpis non magna interdum pharetra. Ut auctor nec arcu a  lobortis.   Fusce dignissim, nunc vitae luctus dapibus, est metus sollicitudin massa, ut placerat est quam quis nisi. Nulla vulputate risus elit, id facilisis nisi aliquam molestie.
+      </p>
+    </div>
+  </div>
+  <div class='row'>
+    <b-card title="Card Title 1"
+              img-src="https://picsum.photos/600/300/?image=25"
+              img-alt="Image"
+              img-top
+              tag="article"
+              style="max-width: 20rem;"
+              class="mb-2 col">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the bulk of the card s content.
+        </p>
+        <b-button href="#" variant="primary">Go somewhere</b-button>
+      </b-card>
+      <b-card title="Card Title 2"
+              img-src="https://picsum.photos/600/300/?image=25"
+              img-alt="Image"
+              img-top
+              tag="article"
+              style="max-width: 20rem;"
+              class="mb-2 col">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the bulk of the card s content.
+        </p>
+        <b-button href="#" variant="primary">Go somewhere</b-button>
+      </b-card>
+      <b-card title="Card Title 3"
+              img-src="https://picsum.photos/600/300/?image=25"
+              img-alt="Image"
+              img-top
+              tag="article"
+              style="max-width: 20rem;"
+              class="mb-2 col">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the bulk of the card s content.
+        </p>
+        <b-button href="#" variant="primary">Go somewhere</b-button>
+      </b-card>
 
+  </div>
+</div>
 </template>
 
 
@@ -20,6 +67,21 @@ export default {
 </script>
 
 <style scoped>
+div.row{
+  justify-content: space-around;
+}
+.text-wrapper{
+  text-align : center;
+  width: 500px;
+  margin: auto;
+
+}
+.text-wrapper h2{
+  margin-bottom: 15px;
+}
+.text-wrapper p{
+  margin-bottom: 50px;
+}
 
 
 </style>
