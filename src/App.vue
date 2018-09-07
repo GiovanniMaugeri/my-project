@@ -1,5 +1,6 @@
 <template>
 <div >
+  <p>{{ msg }}</p>
   <Nav v-on:welcome='showPageA' v-on:form='showPageB' v-on:contact='showPageC'/>
   <MainContent  />
 </div>
@@ -30,7 +31,7 @@ export default {
   },
   data()  {
     return {
-      value : 1
+      value : 1,
     }
   },
   methods: {
@@ -43,7 +44,9 @@ export default {
     showPageC: function(){
     //  this.value = 3;
     }
-  }
+  },
+  props: ['msg']
+
 }
 </script>
 

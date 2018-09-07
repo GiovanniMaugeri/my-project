@@ -1,7 +1,6 @@
 <template>
 <div>
   <b-nav class='menu row'>
-
       <b-nav-item class='col col-xs-12 col-md-4' to='/content/pageA'>Welcome</b-nav-item>
       <b-nav-item class='col col-xs-12 col-md-4' to='/content/pageB'>Form</b-nav-item>
       <b-nav-item class='col col-xs-12 col-md-4' to='/content/pageC'>Contact us</b-nav-item>
@@ -38,5 +37,8 @@ export default {
 }
 .col{
   text-align: center;
+}
+.col:hover{
+  text-decoration: underline;
 }
 </style>
