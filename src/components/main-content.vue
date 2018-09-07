@@ -1,8 +1,6 @@
 <template>
 <div>
-  <PageA v-if="value == 1" class='pageA'/>
-  <PageB v-if="value == 2" class='pageB'/>
-  <PageC v-if="value == 3" class='pageC'/>
+  <router-view/>
 </div>
 </template>
 
