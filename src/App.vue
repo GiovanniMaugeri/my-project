@@ -1,6 +1,5 @@
 <template>
 <div >
-  <p>{{ msg }}</p>
   <Nav v-on:welcome='showPageA' v-on:form='showPageB' v-on:contact='showPageC'/>
   <MainContent  />
 </div>

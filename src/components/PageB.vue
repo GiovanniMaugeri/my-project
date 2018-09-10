@@ -51,6 +51,9 @@
 
 
 <script>
+
+const axios = require('axios');
+
 export default {
   name: 'SignUp',
   data () {
@@ -67,10 +70,17 @@ export default {
   methods: {
     onSubmit (evt) {
       evt.preventDefault();
-      if(! this.errors.has('phone'))
-        alert(JSON.stringify(this.form));
-      else
-        alert('Correct the mistakes')
+      axios.post('https://ptsv2.com/t/v3vb3-1536574083/post', {
+        firstName: 'Fred',
+        lastName: 'Flintstone'
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
   },
     onReset (evt) {
       evt.preventDefault();

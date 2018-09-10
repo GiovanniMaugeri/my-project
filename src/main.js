@@ -16,7 +16,7 @@ Vue.use(VueRouter)
 Vue.use(VeeValidate);
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false
-
+  
 /* eslint-disable no-new */
 const router = new VueRouter({
   routes: [
