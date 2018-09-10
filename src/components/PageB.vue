@@ -42,7 +42,7 @@
         <b-form-checkbox value="that">Check that out</b-form-checkbox>
       </b-form-checkbox-group>
     </b-form-group>
-    <b-button type="submit" variant="primary">Submit</b-button>
+    <b-button id='submit'type="submit" variant="primary">Submit</b-button>
     <b-button type="reset" variant="danger">Reset</b-button>
   </b-form>
 </div>
