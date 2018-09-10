@@ -43,8 +43,7 @@ export default {
     showPageC: function(){
     //  this.value = 3;
     }
-  },
-  props: ['msg']
+  }
 
 }
 </script>
