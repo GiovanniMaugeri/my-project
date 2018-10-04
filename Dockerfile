@@ -1,8 +1,11 @@
 # build stage
-FROM node:9.11.1-alpine as build-stage
+FROM ubuntu:latest as build-stage
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+# RUN npm install
 COPY . .
-RUN npm run build
-RUN npm run unit
+RUN apt-get update && apt-get add ca-certificates && update-ca-certificates && apt-get add openssl
+# RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+RUN dpkg -i ./google-chrome-stable_current_amd64.deb; apt-get -fy install
+# RUN npm run build
+# RUN npm run unit
