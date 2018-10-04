@@ -3,8 +3,7 @@
   <b-row class='Fpar'>
     <b-col  class='text-wrapper col-md-10'>
       <h2>Some title</h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in eros faucibus, tempor quam eget, convallis libero. Praesent sed faucibus ipsum. Cras pretium tellus nec lectus semper tincidunt. Pellentesque lobortis dolor nibh, vitae lobortis orci efficitur eget. Vestibulum fermentum viverra enim, non rhoncus augue mollis non. Maecenas placerat tincidunt imperdiet. Fusce viverra dapibus dui at pretium. Proin eget turpis non magna interdum pharetra. Ut auctor nec arcu a  lobortis.   Fusce dignissim, nunc vitae luctus dapibus, est metus sollicitudin massa, ut placerat est quam quis nisi. Nulla vulputate risus elit, id facilisis nisi aliquam molestie.
-      </p>
+      <p v-for='inf in info'>{{ inf.id }}  {{ inf.name}}  {{ inf.description }}</p>
     </b-col>
   </b-row>
   <div class='row card-container container'>
@@ -69,7 +68,7 @@ export default {
 
   },
   mounted () {
-    axios.get('https://api.coindesk.com/v1/bpi/currentprice.json').then(response => (this.info = response.data.bpi))
+    axios.get('http://localhost:3000/processors').then(response => (this.info = response.data))
   }
 
 }

@@ -70,7 +70,7 @@ export default {
   methods: {
     onSubmit (evt) {
       evt.preventDefault();
-      axios.post('https://ptsv2.com/t/v3vb3-1536574083/post', {
+      axios.post('http://localhost:3000/processors', {
         firstName: 'Fred',
         lastName: 'Flintstone'
       })
